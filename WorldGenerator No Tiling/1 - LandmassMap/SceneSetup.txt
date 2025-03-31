@@ -1,0 +1,29 @@
+1. Make a new 2D Scene
+
+2. Add these Nodes:
+	- SubViewport
+		- ColorRect (As child of SubViewport)
+
+3. Add LandmassGenerator.gd to the scene root Node2D
+
+4. Make a new ShaderMaterial for the ColorRect and use LandmassGenerator.gdshader
+
+5. Go into the Shader Parameters and set the empty sampler2D Parameters:
+	- Continent Noise - Make a new NoiseTexture2D with a lower frequency for larger continents.
+	- Island Noise - Make a new NoiseTexture2D with a higher frequency for smaller islands around the continent
+	- Continent Falloff - Make a new GradientTexture2D to control the falloff gradient for the inner continent
+		- In the "Fill" tab, set "fill" to Radial
+	- Island Outer Falloff - Make a new GradientTexture2D to control how the outer Islands taper off into the ocean.
+		- In the "Fill" tab, set "fill" to Square
+	- Island Inner Falloff - Make a new GradientTexture2D to control how the island texture mixes with the continent texture.
+		- In the "Fill" tab, set "fill" to Raidal
+
+6. Save each of those NoiseTexture2Ds and GradientTexture2Ds with the following paths so that the LandmassGenerator script sets the parameters correctly every time:
+	
+	Continent Noise = "res://1 - LandmassMap/continent_noise_texture.tres"
+	Island Noise = "res://1 - LandmassMap/island_noise_texture.tres"
+	Continent Falloff = "res://1 - LandmassMap/continent_falloff_gradient.tres"
+	Island Outer Falloff = 'res://1 - LandmassMap/island_outer_falloff_gradient.tres'
+	Island Inner Falloff = 'res://1 - LandmassMap/island_inner_falloff_gradient.tres'
+		
+7. Ensure all paths are correct and run the scene to save a randomized LandmassMap to the Images folder. 

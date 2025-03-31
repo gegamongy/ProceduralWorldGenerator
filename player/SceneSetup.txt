@@ -1,0 +1,15 @@
+1. Make a new 3D scene called Player
+
+2. Add a CharacterBody3D and call it PLayer. Make it the scene root and delete the old scene root.
+
+3. Add a CollisionShape3D and set it to a character sized capsule shape. 
+
+4. Add a Node3D and call it CameraBase. Move it to wherever you want the camera to be on the Capsule.
+
+5. Add a Camera3D as a child to CameraBase. Set the Camera's Transform position to 0 so it is in the same position as Camera Base.
+
+6. Rotate CameraBase 180 deg on the Y axis so the camera is facing forward on the Z axis.
+
+7. Add Player.gd to the CharacterBody3D root node.
+
+8. Import this scene wherever you want to toggle between flying around and walking with collision.

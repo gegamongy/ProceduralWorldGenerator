@@ -1,0 +1,5 @@
+1. Make a new 2D Scene
+
+2. Add FloodFillAltitude.gd to scene root.
+
+3. Ensure all file paths are correct and run scene to use WaterBiomesWithUniqueColors to set each WaterBiome to an average altitude.

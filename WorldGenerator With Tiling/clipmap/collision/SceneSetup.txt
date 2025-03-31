@@ -1,0 +1,15 @@
+1. Make a new Scene with a CollisionShape3D as its root called ClipmapCollision.
+
+2. Attach ClipmapCollision.gd to the CollisionShape.
+
+3. Click on CollisionShape3D and create the template mesh. Set it to PlaneMesh. Set the size to a reasonable
+	size but doesnt need to be very big. Ex. 30m x 30m.
+	
+	Subdivide the mesh by its size (30 x 30) - 1 = (29 x 29) so that each vertex is exactly 1m apart and matches
+	with the clipmap mesh.
+	
+4. Set the Shape of the CollisionShape to ConcavePolygonShape.
+
+5. Now when you import this ClipmapCollision scene to a GameWorld Scene that has a Player and a Clipmap Mesh,
+	you can Assign the player to the ClipmapCollision and the clipmap collision map will follow the player around
+	with the clipmap mesh.

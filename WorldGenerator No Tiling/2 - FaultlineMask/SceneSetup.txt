@@ -1,0 +1,15 @@
+1. Make a new 2D Scene
+
+2. Add these Nodes:
+	- SubViewport
+		- ColorRect (As child of SubViewport)
+
+3. Add FaultlineGenerator.gd to the scene root Node2D
+
+4. Make a new ShaderMaterial for the ColorRect and use FaultlineGenerator.gdshader
+
+5. In Shader Parameters, set the "Noise" sampler2D to a NoiseTexture2D. Change any values to your liking for customization.
+
+6. Save the Noise as a resource under this path: "res://2 - FaultlineMask/faultline_generator_noise_texture.tres" so that it will always be used by the script.
+
+7. Ensure all paths are correct and run the scene to save a FaultlineMask to the Images folder. 

@@ -1,0 +1,11 @@
+1. Make a new 2D Scene
+
+2. Add these Nodes:
+	- SubViewport
+		- ColorRect (As child of SubViewport)
+
+3. Add LandmassFlatWaterBiomes.gd to the scene root Node2D
+
+4. Make a new ShaderMaterial for the ColorRect and use LandmassFlatWaterBiomes.gdshader
+
+5. Ensure all paths are correct and run the scene to save LandmassFlatWaterBiomes to the Images folder. 

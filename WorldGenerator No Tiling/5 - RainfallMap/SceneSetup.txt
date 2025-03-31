@@ -1,0 +1,13 @@
+1. Make a new 2D Scene
+
+2. Add these Nodes:
+	- SubViewport
+		- ColorRect (As child of SubViewport)
+
+3. Add RainfallMap.gd to the scene root Node2D
+
+4. Make a new ShaderMaterial for the ColorRect and use RainfallMap.gdshader
+
+5. Go into Shader Parameters and set the Noise parameter to a NoiseTexture2D and save it as a resource.
+
+6. Ensure all paths are correct and run the scene to save a RainfallMap to the Images folder. 

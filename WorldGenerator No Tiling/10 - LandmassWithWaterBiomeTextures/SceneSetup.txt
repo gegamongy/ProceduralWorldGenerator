@@ -1,0 +1,20 @@
+1. Make a new 2D Scene
+
+2. Add these Nodes:
+	- SubViewport
+		- ColorRect (As child of SubViewport)
+
+3. Add WaterBiomeTextures.gd to the scene root Node2D
+
+4. Make a new ShaderMaterial for the ColorRect and use WaterBiomeTextures.gdshader
+
+5. Go into Shader Parameters and set Swamp Texture to a mild and very high frequency NoiseTexture2D.
+
+6. Set Wetland Texture to a mild and very high frequency NoiseTexture2D.
+
+7. Save both noise textures under these paths so that the script uses them every time:
+	
+	Swamp Texture = "res://10 - LandmassWithWaterBiomeTextures/swamp_noise_texture.tres"
+	Wetland Texture = "res://10 - LandmassWithWaterBiomeTextures/wetland_noise_texture.tres"
+
+7. Ensure all paths are correct and run the scene to save LandmassWaterBiomeTextures to the Images folder. 

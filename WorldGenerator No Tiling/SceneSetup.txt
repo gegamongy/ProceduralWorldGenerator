@@ -1,0 +1,7 @@
+1. Make a new 2D scene called MainWorldGenerator.
+
+2. Add MainWorldGenerator.gd to the scene root.
+
+3. Run the scene to generate a new randomized procedural world.
+
+4. In the inspector, with the Scene Root selected, choose to start the world generation from a specific step.

@@ -1,0 +1,47 @@
+1. Make a new 2D Scene
+
+2. Add a Node to act as a node container, and call it Subviewports.
+
+3. Add 10 Subviewports with ColorRects as children to the Subviewports Container - These will each be used to save seperate data channels into seperate images.
+	
+	- SubViewport (Biome Weights Image 1 - R: Desert, G: Tundra, B: Grasslands)
+		- ColorRect
+	
+	- SubViewport2 (Biome Weights Image 2 - R: DryForest, G: Rainforest, B: Wetlands)
+		- ColorRect2
+	
+	- SubViewport3 (Biome Weights Image 3 - R: Swamp, G: Lake, B: Ocean)
+		- ColorRect3
+		
+	- SubViewport4 (Biome Weights Image 4 - R: Beach, G: Alpine Grasslands, B: Alpine Tundra)
+		- ColorRect4
+		
+	- SubViewport5 (Biome Weights Image 5 - R: Alpine Desert)
+		- ColorRect5
+		
+	- SubViewport6 (Water Biomes - R: Swamp, G: Wetland, B: Lake)
+		- ColorRect6
+		
+	- SubViewport7 (Lake Depth Map)
+		- ColorRect7
+		
+	- SubViewport8 (Swamp Mask)
+		- ColorRect8
+		
+	- SubViewport9 (Wetland Mask)
+		- ColorRect9
+		
+	- SubViewport10 (Biome Colors - Not necessary but can help with visualization)
+		- ColorRect10
+
+
+
+3. Add BiomeGenerator.gd to the scene root Node2D
+
+4. Make a new seperate ShaderMaterial for each ColorRect and use BiomeGenerator.gdshader for each one.
+
+5. Go into Shader Parameters for each ColorRect and for ColorRect 1 set Biome Weight Image to 0, for ColorRect 2 set it to 1, for ColorRect3 set it to 2, and so on. 
+
+6. For ColorRect10 turn on Display Biome Colors to show Biome Colors.
+
+5. Ensure all paths are correct and run the scene to save all images to the Images folder. 

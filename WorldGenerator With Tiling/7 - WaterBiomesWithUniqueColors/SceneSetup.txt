@@ -1,0 +1,5 @@
+1. Make a new 2D Scene
+
+2. Add FloodFillLakes.gd to scene root.
+
+3. Ensure all file paths are correct and run scene to use Water Biome Map to assign a random color to each water biome region.
