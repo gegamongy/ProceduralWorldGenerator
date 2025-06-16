@@ -1,0 +1,8 @@
+[gd_resource type="NoiseTexture2D" load_steps=2 format=3 uid="uid://dq71g0wuwbx7j"]
+
+[ext_resource type="FastNoiseLite" uid="uid://df8iyxt01knik" path="res://mountain_range/mountain_biome_noise.tres" id="1_8vk74"]
+
+[resource]
+width = 1048
+height = 1048
+noise = ExtResource("1_8vk74")

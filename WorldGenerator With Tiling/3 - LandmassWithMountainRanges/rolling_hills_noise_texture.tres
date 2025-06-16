@@ -1,0 +1,8 @@
+[gd_resource type="NoiseTexture2D" load_steps=2 format=3 uid="uid://dirnsan0gtmky"]
+
+[ext_resource type="FastNoiseLite" uid="uid://pakayxy1nlgv" path="res://RollingHillsTexture/rolling_hills_noise.tres" id="1_5vt5u"]
+
+[resource]
+width = 1024
+height = 1024
+noise = ExtResource("1_5vt5u")
